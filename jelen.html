@@ -1,15 +1,164 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-    <title>Várak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
 </head>
+
 <body>
-    
+    <header>
+        <div id="címsor" class="p-5 text-center text-white bg-dark">
+            <h1>Vár Jelenben</h1>
+        </div>
+    </header>
+
+
+    <nav class="navbar bs-light bg-dark text-white navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="főoldal.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="története.html">A vár története</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="jelen.html">A vár jelene</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="programok_jegyvásárlás.html">Programok és jegyvásárlás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="kapcsolat_elérhetőségek.html">Kapcsolat és elérhetőségek</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="text-align: center; margin-top: 40px; margin-bottom: 30px;">
+        <p>A nemesvámosi vár ma is áll, és fontos szerepet tölt be a környék életében. A vár erős kőfalai és tornyai
+            egyszerre idézik fel a múlt hangulatát, miközben a hely a jelenben is élő és látogatott. A vár nemcsak
+            történelmi emlék, hanem közösségi tér is, ahol a látogatók megismerik a vár mindennapjait és hangulatát.
+
+            A nemesvámosi vár nyitva áll az érdeklődők előtt, és célja, hogy bemutassa a középkori életet, valamint
+            élményt nyújtson minden korosztály számára. A vár ma a hagyomány és a modern bemutatás találkozási pontja.
+        </p>
+    </div>
+    <h2 style="text-align: center;">Programok,lehetőségek</h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="text-align: center;">
+                    Lovagi bemutatók
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6" style="margin-top: 60px;">A nemesvámosi várban rendszeresen tartanak lovagi bemutatókat, ahol a
+                        látogatók megismerik a középkori harcmodort. A páncélba öltözött lovagok fegyverbemutatót
+                        tartanak,
+                        és látványos párviadalokat mutatnak be a vár udvarán. A program során a nézők megtudják, hogyan
+                        éltek és harcoltak a lovagok, és közelebbről is megtekinthetik a korabeli felszereléseket.</div>
+                        <div class="col-lg-6 col-sm-6"><img src="parbaj.jpg" alt="lovagiparbaj" style="height: 250px;width: 500px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo"> 
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Vezetett várbejárás
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    A vezetett várbejárás során a látogatók felfedezik a nemesvámosi vár
+                    tornyait, termeit és falait. Az idegenvezetők mesélnek a vár jelenlegi életéről, működéséről és
+                    mindennapjairól. A túra során a vendégek megismerik a vár különböző részeit, és bepillantást nyernek
+                    abba, hogyan használják a várat napjainkban.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Kézműves foglalkozások
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A vár kézműves programokat is kínál, ahol gyerekek és felnőttek egyaránt
+                    kipróbálhatják a középkori mesterségeket. A résztvevők egyszerűbb tárgyakat készítenek, például bőr
+                    karkötőt, címert vagy díszeket. A foglalkozások célja, hogy a látogatók aktívan, élményszerűen
+                    kapcsolódjanak a vár életéhez.
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    Some placeholder content for the first collapse component of this multi-collapse example. This panel
+                    is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    Some placeholder content for the second collapse component of this multi-collapse example. This
+                    panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions" style="text-align:center;">Enable both scrolling & backdrop</button>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h4>Mai események</h4>
+            <ul>
+                <li>11:00 – Várvezetés</li>
+                <li>13:00 – Lovagi bemutató</li>
+                <li>15:00 – Kézműves foglalkozás</li>
+            </ul>
+        </div>
+
+        <div class="offcanvas-body">
+            <img src="ChatGPT Image 2026. jan. 9. 11_52_54.png" class="img-fluid mb-3" alt="Nemesvámosi vár">
+            <p>A nemesvámosi vár ma is őrzi a középkor hangulatát.</p>
+        </div>
+
+
+
+    </div>
+
 </body>
+
 </html>
