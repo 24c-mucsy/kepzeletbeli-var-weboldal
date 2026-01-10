@@ -1,4 +1,37 @@
 .container1{
     
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+.container-main{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+
+}
+
+.vege{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
 }
