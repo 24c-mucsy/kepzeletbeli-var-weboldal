@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A vár jelene | Nemesvámosi Vár</title>
+    <meta name="description" content="Fedezd fel a nemesvámosi vár mai életét, programjait és lehetőségeit.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,8 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="jelen.css">
 </head>
 
 <body>
@@ -55,109 +56,322 @@
             élményt nyújtson minden korosztály számára. A vár ma a hagyomány és a modern bemutatás találkozási pontja.
         </p>
     </div>
-    <h2 style="text-align: center;">Programok,lehetőségek</h2>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="text-align: center;">
-                    Lovagi bemutatók
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6" style="margin-top: 60px;">A nemesvámosi várban rendszeresen tartanak lovagi bemutatókat, ahol a
-                        látogatók megismerik a középkori harcmodort. A páncélba öltözött lovagok fegyverbemutatót
-                        tartanak,
-                        és látványos párviadalokat mutatnak be a vár udvarán. A program során a nézők megtudják, hogyan
-                        éltek és harcoltak a lovagok, és közelebbről is megtekinthetik a korabeli felszereléseket.</div>
-                        <div class="col-lg-6 col-sm-6"><img src="parbaj.jpg" alt="lovagiparbaj" style="height: 250px;width: 500px;"></div>
+    <div class="container content-sectipn">
+        <h2 style="text-align: center; width: 100%;">Programok és Lehetőségek</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                        style="text-align: center;">
+                        Lovagi bemutatók
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+
+                                <div id="carouselLovagok" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselLovagok" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselLovagok" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselLovagok" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="parbaj.jpg" class="d-block w-100" alt="Lovagi párviadal"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>lovagi párviadal</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="pancelzat.jfif" class="d-block w-100" alt="Lovagok páncélban"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Középkori páncélzat</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="korabeli fegyverek.jfif" class="d-block w-100"
+                                                alt="Középkori fegyverek" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Korabeli fegyverek</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselLovagok" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">elozo</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselLovagok" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">kovi</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6" style="display: flex; align-items: center;">
+                                <p>A nemesvámosi várban rendszeresen tartanak lovagi bemutatókat, ahol a
+                                    látogatók megismerik a középkori harcmodort. A páncélba öltözött lovagok
+                                    fegyverbemutatót
+                                    tartanak, és látványos párviadalokat mutatnak be a vár udvarán. A program során a
+                                    nézők megtudják, hogyan
+                                    éltek és harcoltak a lovagok, és közelebbről is megtekinthetik a korabeli
+                                    felszereléseket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Vezetett várbejárás
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div id="carouselVarbejarias" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselVarbejarias" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselVarbejarias" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselVarbejarias" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="varbelul.jfif" class="d-block w-100" alt="Vár belseje"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>A vár belseje</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="eroditmeny.jfif" class="d-block w-100" alt="Vár tornyai"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Erődített tornyok</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="varudvar.jfif" class="d-block w-100" alt="Vár udvara"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>A vár udvara</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselVarbejarias" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">elozo</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselVarbejarias" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">kovi</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6" style="display: flex; align-items: center;">
+                                <p>A vezetett várbejárás során a látogatók felfedezik a nemesvámosi vár
+                                    tornyait, termeit és falait. Az idegenvezetők mesélnek a vár jelenlegi életéről,
+                                    működéséről és
+                                    mindennapjairól. A túra során a vendégek megismerik a vár különböző részeit, és
+                                    bepillantást nyernek
+                                    abba, hogyan használják a várat napjainkban.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Kézműves foglalkozások
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div id="carouselKezmuvek" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselKezmuvek" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselKezmuvek" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselKezmuvek" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="borkarkoto.jfif" class="d-block w-100" alt="Bőr karkötő"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Bőr karkötő készítés</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="cimer.jfif" class="d-block w-100" alt="Címer készítés"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Középkori címer</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="kezmuves.jfif" class="d-block w-100" alt="Díszek"
+                                                style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                                <p>Kézműves díszek</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselKezmuvek" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">elozo</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselKezmuvek" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">kovi</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6" style="display: flex; align-items: center;">
+                                <p>A vár kézműves programokat is kínál, ahol gyerekek és felnőttek egyaránt
+                                    kipróbálhatják a középkori mesterségeket. A résztvevők egyszerűbb tárgyakat
+                                    készítenek, például bőr
+                                    karkötőt, címert vagy díszeket. A foglalkozások célja, hogy a látogatók aktívan,
+                                    élményszerűen
+                                    kapcsolódjanak a vár életéhez.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo"> 
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Vezetett várbejárás
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    A vezetett várbejárás során a látogatók felfedezik a nemesvámosi vár
-                    tornyait, termeit és falait. Az idegenvezetők mesélnek a vár jelenlegi életéről, működéséről és
-                    mindennapjairól. A túra során a vendégek megismerik a vár különböző részeit, és bepillantást nyernek
-                    abba, hogyan használják a várat napjainkban.
 
+        <div class="container content-section">
+            <h2 style="text-align: center; width: 100%;">Napi Események</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Mai Programok
+                Megtekintése</button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Mai Események</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Kézműves foglalkozások
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">A vár kézműves programokat is kínál, ahol gyerekek és felnőttek egyaránt
-                    kipróbálhatják a középkori mesterségeket. A résztvevők egyszerűbb tárgyakat készítenek, például bőr
-                    karkötőt, címert vagy díszeket. A foglalkozások célja, hogy a látogatók aktívan, élményszerűen
-                    kapcsolódjanak a vár életéhez.
 
+                <div class="offcanvas-body" style="overflow-y: auto; max-height: 80vh;">
+                    <h4
+                        style="margin-bottom: 18px; font-size: 1.2rem; font-weight: 700; color: #333333; border-bottom: 3px solid #999999; padding-bottom: 10px;">
+                        Közelgő Programok</h4>
+
+
+                    <div
+                        style="margin-bottom: 16px; background-color: #f5f5f5; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="varvezetes.jfif" alt="Történeti Várvezetés"
+                            style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">
+                        <p style="margin-bottom: 4px; font-weight: 700; color: #333333; font-size: 1rem;">11:00 –
+                            Történeti Várvezetés</p>
+                        <p style="margin-bottom: 0; font-size: 0.95rem; color: #555555; line-height: 1.5;">
+                            Idegenvezetésünk kalauzolásával fedezd fel a vár múltját!</p>
+                    </div>
+
+
+                    <div
+                        style="margin-bottom: 16px; background-color: #f5f5f5; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="parbaj.jpg" alt="Lovagi Bemutató"
+                            style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">
+                        <p style="margin-bottom: 4px; font-weight: 700; color: #333333; font-size: 1rem;">13:00 – Lovagi
+                            Bemutató</p>
+                        <p style="margin-bottom: 0; font-size: 0.95rem; color: #555555; line-height: 1.5;">Páncélba
+                            öltözött lovagok, fegyverek és épikus párviadal!</p>
+                    </div>
+
+
+                    <div
+                        style="margin-bottom: 16px; background-color: #f5f5f5; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="kezmuves.jfif" alt="Kézműves Foglalkozás"
+                            style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">
+                        <p style="margin-bottom: 4px; font-weight: 700; color: #333333; font-size: 1rem;">15:00 –
+                            Kézműves Foglalkozás</p>
+                        <p style="margin-bottom: 0; font-size: 0.95rem; color: #555555; line-height: 1.5;">Készíts saját
+                            középkori díszeket és karkötőt!</p>
+                    </div>
+
+
+                    <div
+                        style="margin-bottom: 20px; background-color: #f5f5f5; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="ChatGPT Image 2026. jan. 9. 11_52_54.png" alt="Vári Túra"
+                            style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">
+                        <p style="margin-bottom: 4px; font-weight: 700; color: #333333; font-size: 1rem;">16:30 – Vári
+                            Túra</p>
+                        <p style="margin-bottom: 0; font-size: 0.95rem; color: #555555; line-height: 1.5;">A vár
+                            tetejéről gyönyörű kilátás és történeti információk!</p>
+                    </div>
+
+                    <h4
+                        style="margin-bottom: 12px; margin-top: 16px; font-weight: 700; color: #333333; border-bottom: 2px solid #999999; padding-bottom: 8px;">
+                        Nyitvatartás</h4>
+                    <p style="margin-bottom: 6px; font-size: 0.95rem;"><strong>Hétfő - Csütörtök:</strong> Zárva</p>
+                    <p style="margin-bottom: 16px; font-size: 0.95rem;"><strong>Péntek - Vasárnap:</strong> 10:00 -
+                        18:00</p>
+
+                    <h4
+                        style="margin-bottom: 12px; font-weight: 700; color: #333333; border-bottom: 2px solid #999999; padding-bottom: 8px;">
+                        Csoportos Látogatások</h4>
+                    <p style="margin-bottom: 6px; font-size: 0.95rem;"><strong>Min. 10 fő</strong> foglalás szükséges
+                    </p>
+                    <p style="margin-bottom: 16px; font-size: 0.95rem;">Idegenvezetés: Kérésre elérhető</p>
                 </div>
             </div>
         </div>
     </div>
+            <div class="vege">
+                <footer>
+                    <hr style="height: 2px; background-color: rgb(255, 250, 250)">
+                    <h1>További Elérhetőségek</h1>
 
-    <div class="row">
-        <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <div class="card card-body">
-                    Some placeholder content for the first collapse component of this multi-collapse example. This panel
-                    is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
+
+
+                    <p style="font-size: 20px;">Telefonszám: +36 70 987 6543</p>
+                    <p style="font-size: 20px;">E-mail cím: ugyfelszolgalat@vamosivar.hu</p>
+
+                    <h1>Térképen is megtalál mineket!</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21289.155541629486!2d17.64150644185786!3d47.18986731918673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8d828c91a1b5%3A0xd0c7d49c6f4e1a1a!2sNemesv%C3%A1mos%2C%20Magyarorsz%C3%A1g!5e0!3m2!1shu!2sus!4v1700000000000!5m2!1shu!2sus"
+                        width="55%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+
+                    <p style="text-align: center; font-size: 25px;">© 2026 NemesVamosi Var</p>
+
+                </footer>
+
             </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                <div class="card card-body">
-                    Some placeholder content for the second collapse component of this multi-collapse example. This
-                    panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-        aria-controls="offcanvasWithBothOptions" style="text-align:center;">Enable both scrolling & backdrop</button>
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <h4>Mai események</h4>
-            <ul>
-                <li>11:00 – Várvezetés</li>
-                <li>13:00 – Lovagi bemutató</li>
-                <li>15:00 – Kézműves foglalkozás</li>
-            </ul>
-        </div>
-
-        <div class="offcanvas-body">
-            <img src="ChatGPT Image 2026. jan. 9. 11_52_54.png" class="img-fluid mb-3" alt="Nemesvámosi vár">
-            <p>A nemesvámosi vár ma is őrzi a középkor hangulatát.</p>
-        </div>
 
 
-
-    </div>
 
 </body>
 
