@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jegyvásárlás</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Jegyvásárlás</title>
+  <style>
+    #cardDetails { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px; }
+    .cart-item { border-bottom: 1px solid #ddd; padding: 10px 0; display: flex; justify-content: space-between; align-items: center; }
+  </style>
+</head>
+<body>
+    <header>
+        <div id="címsor" class="p-5 text-center text-white bg-dark">
+          <h1>Jegyvásárlás</h1>
+        </div>
+    </header>
+      
+    <nav class="navbar bs-light bg-dark text-white navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="főoldal.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="története.html">A vár története</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="jelen.html">A vár jelene</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="programok_jegyvásárlás.html">Programok</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="kapcsolat_elérhetőségek.html">Kapcsolat és elérhetőségek</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container py-5">
+    <h1 class="mb-4 text-center">Vár Belépő Vásárlás</h1>
+
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-md-4">
+        <label for="ticketType" class="form-label">Belépő típusa:</label>
+        <select id="ticketType" class="form-select">
+          <option value="2500">Felnőtt - 2500 Ft</option>
+          <option value="1500">Gyerek - 1500 Ft</option>
+          <option value="2000">Diák - 2000 Ft</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+        <label for="quantity" class="form-label">Mennyiség:</label>
+        <input type="number" id="quantity" class="form-control" value="1" min="1">
+      </div>
+      <div class="col-4 col-md-3">
+        <label class="form-label">Ár:</label>
+        <input type="text" id="priceDisplay" class="form-control" value="2500 Ft" readonly>
+      </div>
+      <div class="col-2 col-md-3 d-flex align-items-end">
+        <button id="addToCart" class="btn btn-success w-100">Kosárba</button>
+      </div>
+    </div>
+
+    <h3>Kosár</h3>
+    <div id="cart" class="mb-4"></div>
+    <h5>Összesen: <span id="cartTotal">0 Ft</span></h5>
+
+    <form id="checkoutForm" class="row g-3 mt-4">
+      <div class="col-12 col-md-4">
+        <label for="name" class="form-label">Teljes név:</label>
+        <input type="text" id="name" class="form-control" placeholder="Név" required>
+      </div>
+      <div class="col-12 col-md-4">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="col-12 col-md-4">
+        <label for="phone" class="form-label">Telefonszám (kötelező, csak számok, pl. 061234567):</label>
+        <input type="tel" id="phone" class="form-control" pattern="[0-9]{9,15}" required>
+      </div>
+
+      <div id="cardDetails" class="row g-3 mt-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label">Kártyaszám:</label>
+          <input type="text" id="cardNumber" class="form-control" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required>
+        </div>
+        <div class="col-6 col-md-3">
+          <label class="form-label">Lejárat:</label>
+          <input type="month" id="expiry" class="form-control" required>
+        </div>
+        <div class="col-6 col-md-3">
+          <label class="form-label">CVC:</label>
+          <input type="text" id="cvc" class="form-control" maxlength="3" placeholder="CVC" required>
+        </div>
+      </div>
+ 
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg">Vásárlás</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="vege">
+
+
+    <footer>
+        <hr style="height: 2px; background-color: grey">
+        <h1>További Elérhetőségek</h1>
+
+
+
+        <p style="font-size: 20px;">Telefonszám: +36 70 987 6543</p>
+        <p style="font-size: 20px;">E-mail cím: ugyfelszolgalat@vamosivar.hu</p>
+
+        <h1>Térképen is megtalál mineket!</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21289.155541629486!2d17.64150644185786!3d47.18986731918673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8d828c91a1b5%3A0xd0c7d49c6f4e1a1a!2sNemesv%C3%A1mos%2C%20Magyarorsz%C3%A1g!5e0!3m2!1shu!2sus!4v1700000000000!5m2!1shu!2sus"
+            width="55%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <p style="text-align: center; font-size: 25px;">© 2026 NemesVamosi Var</p>
+
+    </footer>
+
+  </div>
+
+  <script>
+    const ticketType = document.getElementById('ticketType');
+    const quantity = document.getElementById('quantity');
+    const priceDisplay = document.getElementById('priceDisplay');
+    const addToCartBtn = document.getElementById('addToCart');
+    const cartDiv = document.getElementById('cart');
+    const cartTotalSpan = document.getElementById('cartTotal');
+    const checkoutForm = document.getElementById('checkoutForm');
+
+    let cart = [];
+
+    function updatePrice() {
+      priceDisplay.value = (parseInt(ticketType.value) * parseInt(quantity.value)) + ' Ft';
+    }
+
+    ticketType.addEventListener('change', updatePrice);
+    quantity.addEventListener('input', updatePrice);
+
+    addToCartBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      cart.push({
+        name: ticketType.options[ticketType.selectedIndex].text,
+        price: parseInt(ticketType.value),
+        qty: parseInt(quantity.value)
+      });
+      renderCart();
+    });
+
+    function renderCart() {
+      cartDiv.innerHTML = '';
+      let total = 0;
+      cart.forEach((item, index) => {
+        total += item.price * item.qty;
+        cartDiv.innerHTML += `<div class="cart-item">
+          ${item.name} - ${item.qty} db - ${item.price * item.qty} Ft
+          <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">X</button>
+        </div>`;
+      });
+      cartTotalSpan.textContent = total + ' Ft';
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+
+    checkoutForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if(cart.length === 0) { alert("A kosár üres!"); return; }
+
+      if(!confirm("Biztos, hogy véglegesíteni szeretnéd a vásárlást?")) return;
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+
+      if(!name || !email || !phone){
+        alert("Kérlek töltsd ki az összes kötelező mezőt, a telefonszám is kötelező!");
+        return;
+      }
+
+      const cardNumber = document.getElementById('cardNumber').value.trim();
+      const expiry = document.getElementById('expiry').value.trim();
+      const cvc = document.getElementById('cvc').value.trim();
+      if(!cardNumber || !expiry || !cvc){
+        alert("Kérlek töltsd ki a kártyaadatokat!");
+        return;
+      }
+
+      alert(`Sikeres vásárlás!\nÖsszeg: ${cartTotalSpan.textContent}\nNév: ${name}\nTelefonszám: ${phone}`);
+
+      cart = [];
+      renderCart();
+      checkoutForm.reset();
+    });
+  </script>
+</body>
+</html>
